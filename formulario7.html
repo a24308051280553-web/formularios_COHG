@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Aquí importo Font Awesome para que funcionen las clases de los íconos (fa-paper-plane, fa-trash) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-	<h2>Formulario con botones</h2>
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-</form>
+
+    <!-- Título descriptivo para esta práctica -->
+    <h2>Formulario con botones</h2>
+
+    <form action="" method="post">
+        
+        <!-- Entrada de texto estándar para capturar el nombre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+
+        <!-- 
+          Uso la etiqueta <button> en lugar de <input type="submit"> 
+          porque me permite meter etiquetas dentro, como los íconos <i> de Font Awesome.
+        -->
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+
+    </form>
+
+</body>
+</html>
