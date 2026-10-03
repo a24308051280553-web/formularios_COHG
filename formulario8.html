@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Librería de Font Awesome para los íconos de los botones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-	<h2>Formulario con archivos</h2>
-<form action="" method="post">
 
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-<input type="file" name="archivo">
-<br>
-<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-</form>
+    <!-- Título para la práctica de subida de archivos -->
+    <h2>Formulario con archivos</h2>
+
+    <!-- 
+      Ojo importante: Para enviar archivos adjuntos al servidor, más adelante tendré 
+      que agregar el atributo enctype="multipart/form-data" dentro de la etiqueta <form>.
+    -->
+    <form action="" method="post">
+
+        <!-- Campo de texto normal para pedir el nombre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+
+        <!-- 
+          Uso type="file" para mostrar el botón que le permite al usuario 
+          buscar y seleccionar un archivo desde su computadora o celular.
+        -->
+        <input type="file" name="archivo">
+        <br>
+
+        <!-- Botones con íconos de Font Awesome para enviar o limpiar -->
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+
+    </form>
+
+</body>
+</html>
