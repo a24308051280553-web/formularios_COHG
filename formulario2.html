@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Librería para sacar íconos si los necesito después -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-	<h1>Formulario para contraseñas</h1>
-<form action="" method="post">
 
-Ingresa tu usuario:
-<input type="text" name="usuario">
-Ingresa tu contraseña:
-<input type="password" name="pass">
-<br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
+    <!-- Título de la sección de login -->
+    <h1>Formulario para contraseñas</h1>
+
+    <!-- Formulario básico enviando datos por POST -->
+    <form action="" method="post">
+
+        <!-- Texto para pedir el usuario -->
+        Ingresa tu usuario:
+        <!-- Caja normal de texto para el nombre de usuario -->
+        <input type="text" name="usuario">
+
+        <!-- Texto para pedir la clave -->
+        Ingresa tu contraseña:
+        <!-- Ojo: type="password" para que los caracteres se oculten con puntitos -->
+        <input type="password" name="pass">
+
+        <!-- Salto de línea para mandar los botones abajo -->
+        <br>
+
+        <!-- Botón para mandar la info -->
+        <input type="submit" value="Enviar">
+
+        <!-- Botón para limpiar/resetear todas las cajas del formulario -->
+        <input type="reset" value="Borrar">
+
+    </form>
+
+</body>
+</html>
