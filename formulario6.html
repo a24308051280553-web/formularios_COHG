@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Librería de Font Awesome por si quiero ponerle íconos al formulario -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-	<h2>Formularios con seleccion</h2>
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
 
-<br>
-Selecciona tu pais:
-<select name="pais">
-<option value="1">Argentina</option>
-<option value="2">España</option>
-<option value="3">Mexico</option>
-<option value="4">Guatemala</option>
-<option value="5">Honduras</option>
-<option value="6">El Salvador</option>
-<option value="7">Venezuela</option>
-<option value="8">Colombia</option>
-</select>
-<br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
+    <!-- Encabezado para la sección de listas desplegables -->
+    <h2>Formularios con selección</h2>
+
+    <form action="" method="post">
+        
+        <!-- Pido el nombre del usuario normalmente -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+
+        <br>
+        <!-- Pregunta para seleccionar el país -->
+        Selecciona tu país:
+        
+        <!-- 
+          Uso <select> para crear un menú desplegable (lista de opciones).
+          El atributo 'name' define la variable que guardará la opción elegida.
+        -->
+        <select name="pais">
+            <!-- Cada <option> es un elemento de la lista; 'value' es lo que se envía al servidor -->
+            <option value="1">Argentina</option>
+            <option value="2">España</option>
+            <option value="3">México</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="6">El Salvador</option>
+            <option value="7">Venezuela</option>
+            <option value="8">Colombia</option>
+        </select>
+        
+        <br>
+
+        <!-- Botones para mandar la información o limpiar el formulario -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </form>
+
+</body>
+</html>
