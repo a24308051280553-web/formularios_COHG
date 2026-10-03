@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Cargamos los íconos de Font Awesome para los botones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-	<h2>Formulario con campos ocultos</h2>
-<form action="" method="post">
-<input type="hidden" name="hora" value="3:30">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-</form>
+
+    <!-- Encabezado para la práctica de campos invisibles -->
+    <h2>Formulario con campos ocultos</h2>
+
+    <form action="" method="post">
+
+        <!-- 
+          Uso type="hidden" para mandar datos al servidor sin que el usuario los vea en pantalla. 
+          Es muy útil para enviar la hora, IDs, tokens o datos internos del sistema.
+        -->
+        <input type="hidden" name="hora" value="3:30">
+
+        <!-- Entrada de texto normal para el nombre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+
+        <!-- Botones con íconos para enviar o limpiar los campos -->
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+
+    </form>
+
+</body>
+</html>
