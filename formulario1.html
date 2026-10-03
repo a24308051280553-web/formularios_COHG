@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    
+    <!-- Aquí me traigo los íconos de Font Awesome para usarlos después -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-	<h1>formulario1</h1>
+
+    <!-- El título de mi página -->
+    <h1>Formulario 1</h1>
+
+    <!-- 
+      Mi formulario: lo dejo sin 'action' para probar aquí mismo 
+      y le pongo 'post' para que los datos no salgan pegados en la URL.
+    -->
     <form action="" method="post">
-    Ingresa tu nombre:
-   <input type="text" name="nombre" size="20">
-   <br>
-   <input type="submit" value="enviar">
-   </form>
+        
+        <!-- Texto normalito para decirle al usuario qué escribir -->
+        Ingresa tu nombre:
+
+        <!-- La cajita donde van a escribir el nombre -->
+        <input type="text" name="nombre" size="20">
+
+        <!-- Un salto abajo para que el botón no quede pegado al lado -->
+        <br>
+
+        <!-- El botón para mandar los datos -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
